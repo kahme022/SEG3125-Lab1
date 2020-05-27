@@ -1,7 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doordash Survey</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div>
+        <h1>Welcome to my Survey </h1>
+        <p>
+            The website you will do a survey on is DoorDash. You can view the website <a target="about_" href="https://www.doordash.com/en-US">here</a>
+            or press the image below 
+        </p>
+        
+        <div>
+            <a href="https://www.doordash.com/en-US">
+                <img  src="images/doordash.PNG" width="600" height="500">
+            </a>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div>
+            <form>
+                <p>
+                    Q1: What do you like about the website?
+                </p>
+                <input type="text">
+                <br><br>
+                
+                <p>
+                    Q2: What best describes the UI?
+                </p>
+                <div class="radio-list">
+                    <input type="radio" id="r1">
+                    <label for="r1">The UI is efficient</label><br>
+                    <input type="radio" id="r2">
+                    <label for="r2">The UI is easy to use</label><br>
+                    <input type="radio" id="r3">
+                    <label for="r3">The UI is well-designed</label><br>
+                    <input type="radio" id="r4">
+                    <label for="r4">The UI is consistent</label><br>
+                </div>
+                <br><br>
+                
+                <p>
+                    Q3: What UI aspects should the website work on? (Select all that apply)
+                </p>
+                <div>
+                    <input type="checkbox" id="c1">
+                    <label>Usability</label><br>
+                    <input type="checkbox" id="c2">
+                    <label>Consistency</label><br>
+                    <input type="checkbox" id="c3">
+                    <label>Security</label><br>
+                    <input type="checkbox" id="c4">
+                    <label>Functionality</label><br>
+                    <input type="checkbox" id="c5">
+                    <label>Design</label><br>
+                   
+                </div>
+                <br><br>
+
+                <p>
+                    Q4: What other colors would you like to see Doordash incorporate to their website?
+                </p>
+                <label>Choose a color option: </label>
+                <select>
+                    <option>Peach</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Keep the same</option>
+                </select>
+                <br><br>
+
+                <p>
+                    Q5: How satisfied are you with the DoorDash website? 0 (very dissatisfied) to 5 (very satisfied)?
+                </p>
+                <div>
+                    <ul class="likert">
+                        <li class="likert"> Very Dissatisfied <input id="radGuiltyStart" type="radio" name="Guilty" value="1" />
+                        <li class="likert"><input type="radio" name="Guilty" value="2" />
+                        <li class="likert"><input type="radio" name="Guilty" value="3" />
+                        <li class="likert"><input type="radio" name="Guilty" value="4" />
+                        <li class="likert"><input id="radGuiltyEnd" type="radio" name="Guilty" value="5" /> Very Satisfied
+                    </ul>
+                </div>
+                <br><br><br>
+              
+                <label for="comments">Enter any addtional comments below</label><br><br>
+                <textarea name="comments"></textarea><br>
+                <input type="submit" value="Submit Survey">
+            </form>
+        </div>
+    </div>
+
+    <br>
+
+    <footer>
+        <p>Website Desgined By <a >Khalid Ahmed</a>
+        </p>
+    </footer>
 </body>
 </html>
