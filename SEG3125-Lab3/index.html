@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA Groceries</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+
+  <!-- Nav Bar -->
+
+  <div class="navigation-bar">
+
+
+    <div class="navigation-container">
+
+      <a href="#home">
+      <img src="./img/logo.jpg">
+      </a>
+
+      <ul>
+        <li><a href="#pref">1. Grocery Preferences</a></li>
+        <li><a href="#srch">2. Products</a></li>
+        <li><a href="#cart">3. Cart</a></li>
+      </ul>
+      
+    </div>
+
+  </div>
+
+  <div id="home">
+    For all your grocery needs,<br><br> Welcome to KA Groceries !
+
+    <br><br><br>
+
+  </div>
+  
+  <div id="pref">
+    <h2>Customize your Experience</h2>
+      <h3>a. What type of groceries would you like to see?</h3>
+      <div class="preference">
+          <input type="checkbox" name="preference" value="organic"> Organic
+          <input type="checkbox" name="preference" value="vegetarian"> Vegetarian
+          <input type="checkbox" name="preference" value="kosher"> Kosher
+          <input type="checkbox" name="preference" value="glutenFree"> Gluten-Free 
+      </div>
+  
+      <br><br>
+  
+      <h3>b. Choose a category of items?</h3>
+      <div class="preference">
+          <input type="radio" name="categorization" value="dairy"> Dairy  <br>
+          <input type="radio" name="categorization" value="vegetable"> Vegetables <br>
+          <input type="radio" name="categorization" value="meats"> Meats <br>
+          <input type="radio" name="categorization" value="spices"> Spices <br>
+          <input type="radio" name="categorization" value="noAdditional" checked="checked"> All Options <br>
+      </div>
+  
+      <br>
+  
+      <button id="search" class="button">Search for groceries</button>
+  
+      <br><br><br>
+  
+    </div>
+    
+
+
+    <div id="srch">
+      <h2>Search Results</h2>
+      <h3>Here are your results, choose what you'd like to add to your cart</h3>
+    
+      <div id="productChoices" class="grid"></div>
+    
+      <br>
+    
+      <button id="addCart" class="button">Add Choices to my Cart</button>
+    
+    </div>
+
+
+
+    <br><br><br>
+
+
+    <div id="cart">
+      <h2>Cart</h2>
+      <h3>View the contents of your cart below</h3>
+      <p>Selected Items:</p>
+      <div id="crt"></div>
+    </div>
+
+    <script src="main.js"></script>
+   
+<footer>
+  <p>Website Designed By Khalid Ahmed</p>
+</footer>
+
+</body>
+</html>
