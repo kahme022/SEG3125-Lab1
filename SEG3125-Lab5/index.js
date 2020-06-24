@@ -5,27 +5,25 @@ $(document).ready(function() {
             name: 'required',
             phone: {
                 required: true,
-                minlength: 10
+                phone:true
             },
             date: 'required',
             time: 'required',
             cc: {
                 required: true,
-                minlength: 16,
+                creditcard: true
             }  
         },
     
         messages: {
             name: 'Please enter a name',
             phone: {
-                required:'Please enter a phone',
-                minlength: 'Phone number must be at least 10 characters long'
+                required:'Please enter a phone'
             },
             date: 'Please enter a date',
-            date: 'Please enter a time',
+            time: 'Please enter a time',
             cc: {
                 required:'Please enter a credit card',
-                minlength: 'Credit card must be at least 16 characters long'
             }
         },
     
@@ -34,5 +32,12 @@ $(document).ready(function() {
             alert("Your Appointment is Booked !");
         }
     });
+
+    
+    jQuery.validator.addMethod("phone", function (phone_number, element) {
+        phone_number = phone_number.replace(/\s+/g, "");
+        return this.optional(element) || phone_number.length > 9 &&
+              phone_number.match(/^\(?[\d\s]{3}-[\d\s]{3}-[\d\s]{4}$/);
+    }, "Invalid phone number");
 
   });
