@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <script src="index.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -201,7 +202,7 @@
 
     <p>Please fill in the form</p>
 
-    <form>
+    <form id="booking">
 
       <label>Name: <input name="name" type="text" value=""></label>
 
@@ -244,11 +245,11 @@
 
       <br>
 
-      <label>Credit Card #:</label><input id="cc" type="text" value="" placeholder="XXXX XXXX XXXX XXXX" data-toggle="popover" data-content="Asking for the credit card to guarantee booking, in case of a missed appointment your card will be charged $10">
+      <label>Credit Card #:</label><input name="cc" type="text" value="" placeholder="XXXX XXXX XXXX XXXX" data-toggle="popover" data-content="Asking for the credit card to guarantee booking, in case of a missed appointment your card will be charged $10">
 
       <br><br>
 
-      <input id="booked" type="submit" class="btn btn-dark" value="Book Appointment">
+      <input id="booked" type="submit" class="btn btn-dark" value="Book Appointment" onclick="showMessage()">
 
     </form>
 
