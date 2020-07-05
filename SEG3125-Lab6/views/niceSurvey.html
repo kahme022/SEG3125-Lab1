@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container-md my-3 bg-light text-dark" id="survey">
+      <h1 class="display-2 text-center">Survey</h1>
+
+      <br /><br />
+
+      <form>
+        <h2 class="font-weight-normal lead">What fruits(s) do you like?</h2>
+        I like:<br />
+        <input
+          class="form-group"
+          type="text"
+          name="fruit"
+          placeholder="fruit name..."
+          required
+        />
+        <br />
+
+        <h2 class="font-weight-normal lead">What color(s) do you like?</h2>
+        I like:<br />
+        <input type="checkbox" name="color" value="Red" /> Red<br />
+        <input type="checkbox" name="color" value="Green" /> Green<br />
+        <input type="checkbox" name="color" value="Blue" /> Blue<br />
+        <br />
+
+        <h2 class="font-weight-normal lead">What is your favorite animal?</h2>
+        I like:<br />
+        <select class="form-group" name="animal">
+          <option value="Cat" selected="selected">Cat</option>
+          <option value="Dog">Dog</option>
+          <option value="Fish">Fish</option>
+        </select>
+        <br />
+
+        <h2 class="font-weight-normal lead">What is your age?</h2>
+        I am: <br />
+        <input class="form-group lead" name="age" type="number" required />
+        <br />
+
+        <h2 class="font-weight-normal lead">What is your marital status?</h2>
+        I am: <br />
+        <input
+          class="form-group"
+          name="marital"
+          type="radio"
+          value="Single"
+        />
+        Single <br />
+        <input
+          class="form-group"
+          name="marital"
+          type="radio"
+          value="Married"
+        />
+        Married <br />
+        <input
+          class="form-group"
+          name="marital"
+          type="radio"
+          value="Divorced"
+        />
+        Divorced <br />
+        <input
+          class="form-group"
+          name="marital"
+          type="radio"
+          value="Widowed"
+        />
+        Widowed <br />
+        <br />
+
+        <h2 class="font-weight-normal lead">What is your marital status?</h2>
+        I am: <br />
+        <input
+          class="form-group"
+          name="gender"
+          type="radio"
+          value="Male"
+        />
+        Male <br />
+        <input
+          class="form-group"
+          name="gender"
+          type="radio"
+          value="Female"
+        />
+        Female <br />
+        <input
+          class="form-group"
+          name="gender"
+          type="radio"
+          value="Other"
+        />
+        Other <br />
+        <br />
+
+        <br />
+        <button type="submit" class="btn btn-success" id="bb">Submit</button>
+        <p id="thanks"></p>
+      </form>
+    </div>
+    <script src="/assets/action.js"></script>
+  </body>
+</html>
